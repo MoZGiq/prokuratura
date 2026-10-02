@@ -1,6 +1,6 @@
 # АРМ прокуратуры — учёт, протоколы, подбор норм права
 
-Статический сайт (React + Vite + Tailwind CSS) для GitHub Pages. Серверная часть не нужна.
+# https://mozgiq.github.io/prokuratura/
 
 ## Возможности
 
