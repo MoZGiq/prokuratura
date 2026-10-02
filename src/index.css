@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@page {
+  size: A4;
+  margin: 20mm 15mm 20mm 25mm;
+}
+
+html,
+body {
+  background: #eef1f6;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #0f172a;
+}
+
+.sheet {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 20mm 15mm 20mm 25mm;
+  background: #fff;
+  color: #000;
+  font-family: "Times New Roman", Times, "Liberation Serif", serif;
+  font-size: 14pt;
+  line-height: 1.45;
+  box-sizing: border-box;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18);
+  overflow-wrap: anywhere;
+}
+
+@media print {
+  html,
+  body {
+    background: #fff !important;
+  }
+  .sheet {
+    width: auto;
+    min-height: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+  .sheet-wrap {
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .sheet .keep {
+    break-inside: avoid;
+  }
+}
+
+.field-input {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  outline: none;
+}
+.field-input:focus {
+  border-color: #1e3a8a;
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.15);
+}
